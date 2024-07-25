@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snapchat Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('y.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.6);
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            width: 150px; /* Adjust width as needed */
+        }
+
+        .dropdown-content li {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .dropdown-content li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 10px 15px;
+        }
+
+        .dropdown-content li a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .hero {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: black; /* Change to black */
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin: 20px 0;
+            color: black; /* Change to black */
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            color: black; /* Change to black */
+            background-color: #fffc00; /* Snapchat Yellow */
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ffd700; /* Darker shade on hover */
+        }
+
+        .btn-secondary {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .logo-container {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .logo {
+            width: 200px; /* Adjust size as needed */
+        }
+
+        .class-attributes {
+            text-align: center;
+            margin: 50px 0;
+            color: black; /* Change text color to black */
+        }
+
+        .class-attributes h2 {
+            font-size: 32px;
+        }
+
+        .class-attributes ul {
+            list-style: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Features</a>
+                <ul class="dropdown-content">
+                    <li><a href="https://trendblog.net/wp-content/uploads/2016/03/snapchat-chat.png">Feature 1</a></li>
+                    <li><a href="https://variety.com/wp-content/uploads/2022/08/Snapchat-Custom-Backgrounds.png?w=1024">Feature 2</a></li>
+                    <li><a href="https://photos5.appleinsider.com/gallery/24896-33054-snapchat1-l.jpg">Feature 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </div>
+
+    <div class="hero">
+        <h1>Welcome to Snapchat</h1>
+        <p>Share it with your friends!</p>
+        <div class="buttons">
+            <a href="#" class="btn">Get Started</a>
+            <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
+    </div>
+
+    <div class="logo-container">
+        <img src="snap.png" alt="Snapchat Logo" class="logo">
+    </div>
+</body>
+</html>
